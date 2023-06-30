@@ -33,10 +33,12 @@
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                         <li class="nav__item"><a href="#timeline" class="nav__link">Timeline</a></li>
-                        <li class="nav__item"><a href="#certificate" class="nav__link">Certificates</a></li>
+                        <li class="nav__item"><a href="#certificate" class="nav__link">Certificate</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                        <li class="nav__item"><a href="https://drive.google.com/file/d/164fUW4GPyRxIiH2rdqEfkgUUcqczXbUy/view?usp=sharing" class="btn btn-info">Download CV</a> </li>
+                        <li class="nav__item">
+                          <a href="https://drive.google.com/file/d/164fUW4GPyRxIiH2rdqEfkgUUcqczXbUy/view?usp=sharing" class="btn btn-primary">Download CV</a>
+                        </li>
                       </ul>
                 </div>
 
@@ -298,7 +300,7 @@
 
             <!--===== Certificate =====-->
             <section class="certificate section" id="certificate">
-                <h2 class="section-title">Certificates</h2>
+                <h2 class="section-title">Certificate</h2>
 
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
@@ -414,13 +416,15 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
-                <form action="process_form.php" method="POST">
-                  <input type="text" name="name" placeholder="Name" class="contact__input" style="border: 1px solid black;">
-                  <input type="email" name="email" placeholder="Email" class="contact__input" style="border: 1px solid black;">
-                  <textarea name="message" placeholder="Message" class="contact__input" style="border: 1px solid black;"></textarea>
-                  <input type="submit" value="Submit" class="contact__button_button" style="background-color: blue; color: white;">
-              </form>
-              
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" style="border: 1px solid black;">
+                        <input type="email" placeholder="Email" class="contact__input" style="border: 1px solid black;">
+                        <textarea placeholder="Message" class="contact__input" style="border: 1px solid black;"></textarea>
+                        <input type="submit" value="Submit" class="contact__button_button" style="background-color: blue; color: white;">
+                      </form>
+                      
+                </div>
             </section>
         </main>
 
