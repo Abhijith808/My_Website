@@ -299,14 +299,7 @@ img {
   margin-bottom: var(--mb-2);
 }
 
-.about__img {
-  justify-self: center;
-}
 
-.about__img img {
-  width: 200px;
-  border-radius: .5rem;
-}
 
 /* ===== SKILLS =====*/
 

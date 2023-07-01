@@ -77,3 +77,15 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
  }
 
  animateTypewriter();
+
+/*****img******/
+
+
+ const image = document.querySelector('.image');
+image.addEventListener('mouseover', () => {
+  image.querySelector('img').style.filter = 'none';
+});
+
+image.addEventListener('mouseout', () => {
+  image.querySelector('img').style.filter = 'grayscale(100%)';
+});

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="rey.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="bootstrap_min.css" >
         <script src="bootstrap_bundle_min.js"></script>
         <link rel="stylesheet" href="all_min.css">
@@ -82,8 +83,11 @@
                 <h2 class="section-title">About</h2>
 
                 <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="about.jpg" alt="">
+                    <div class="about__img bd-grid">
+                      <div class="image">
+                        <img draggable="false" class="tilt" src="photo.jpg" alt="">
+                      </div>
+                      
                     </div>
                     
                     <div>
@@ -428,21 +432,72 @@
             </section>
         </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">CONTACT</p>
-            <p class="footer__body">abhijithappu808@gmail.com</p>
-            <div class="footer__social">
-                <a href="https://www.facebook.com/profile.php?id=100031929828194" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="https://www.instagram.com/_abzz_808/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://github.com/Abhijith808" class="footer__icon"><i class='bx bxl-github' ></i></a>
-                <a href="https://www.linkedin.com/in/abhijiths808/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://twitter.com/Abhijit18192049" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+     <!--===== FOOTER =====-->
+     <footer class="new_footer_area bg_color">
+      <div class="new_footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                <h3 style="color: #ffffff;">Abhijith's Portfolio</h3>
+                <p style="color: #ffffff;">Thank you for visiting my personal portfolio website. Connect with me over socials.<br><br>Keep Rising 🚀. Let's create something amazing together!</p>
+              </div>
             </div>
-        </footer>
+    
+            <div class="col-lg-1 col-md-6"></div>
 
-
-        <!--===== SCROLL REVEAL =====-->
+            <div class="col-lg-3 col-md-6">
+              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
+                <h3 style="color: #ffffff;">Quick Links</h3>
+                <ul class="list-unstyled f_list">
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#home" class="footer-link active">Home</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#about" class="footer-link">About</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#skills" class="footer-link">Skills</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#timeline" class="footer-link">Timeline</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#timeline" class="footer-link">Certificate</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#services" class="footer-link">Services</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#timeline" class="footer-link">Projects</a></li>
+                  <li><i class="fas fa-chevron-circle-right fa-inverse"style="margin-right: 5px;"></i>
+                    <a href="#timeline" class="footer-link">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="col-lg-4 col-md-6">
+              <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+                <h3 style="color: #ffffff;">Contact Info</h3>
+                <p style="color: #ffffff;"><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</p>
+                <p style="color: #ffffff;"><i class="fas fa-envelope"></i> abhijithappu808@gmail.com</p>
+                <p style="color: #ffffff;"><i class="fas fa-map-marked-alt"></i> Kollam, Kerala, India-691501</p>
+                <div class="footer__social">
+                  <a href="https://www.facebook.com/profile.php?id=100031929828194" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                  <a href="https://www.instagram.com/_abzz_808/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                  <a href="https://github.com/Abhijith808" class="footer__icon"><i class='bx bxl-github'></i></a>
+                  <a href="https://www.linkedin.com/in/abhijiths808/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                  <a href="https://twitter.com/Abhijit18192049" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+                  <a href="https://t.me/Abzz_808" class="footer__icon"><i class='bx bxl-telegram'></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <h6 style="color: #ffffff;" class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/abhijiths808/">Abhijith S</a></h6>
+      </div>
+    </footer>
+            <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
