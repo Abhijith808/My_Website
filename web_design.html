@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio - Web Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Inline CSS */
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #007bff;
+      margin-top: 30px;
+    }
+
+    .web-design-info {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .web-design-info ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    .web-design-info li {
+      margin-bottom: 10px;
+    }
+
+    .work-in-progress {
+      text-align: center;
+      margin-top: 50px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    .work-in-progress h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #007bff;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .work-in-progress p {
+      font-size: 18px;
+      color: #6c757d;
+      line-height: 1.5;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+    .back-button {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Web Design</h1>
+    <div class="web-design-info">
+      <p>
+        Web design is the process of creating the visual look and feel of a website. It involves designing layouts, selecting colors, choosing fonts, and creating graphical elements to enhance the user experience. Effective web design combines aesthetics with usability, ensuring that the website not only looks appealing but also functions intuitively for its intended audience.
+      </p>
+      <p>
+        Key aspects of web design include:
+      </p>
+      <ul>
+        <li>User interface (UI) design</li>
+        <li>Information architecture</li>
+        <li>Wireframing and prototyping</li>
+        <li>Color theory and typography</li>
+        <li>Responsive design for mobile devices</li>
+        <li>Accessibility considerations</li>
+      </ul>
+      <p>
+        Web designers often use tools such as graphic design software, wireframing tools, and code editors to create visually appealing and functional websites. They collaborate with web developers to bring their designs to life and ensure the website's smooth functionality across different browsers and devices.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="work-in-progress">
+      <h3>Work in Progress!</h3>
+      <img src="caution.jpg" alt="Caution" style="max-width: 200px; margin-bottom: 20px;">
+      <p>Exciting things are coming soon. Stay tuned for updates and new projects.</p>
+      <a href="#" onclick="history.back();" class="btn btn-primary back-button">Go Back</a>
+    </div>
+  </div>
+<br>
+<br>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -322,9 +322,11 @@ img {
   text-align: center;
 }
 
+
 .skills__subtitle {
   margin-bottom: var(--mb-2);
 }
+
 
 .skills__text {
   margin-bottom: var(--mb-4);
@@ -856,3 +858,4 @@ textarea{
   letter-spacing: 3px;
   
 }
+
