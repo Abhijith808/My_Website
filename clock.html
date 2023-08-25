@@ -1,44 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-       <meta charset="UTF-8" />
-       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <link rel="stylesheet" href="style_clk.css" />
-       <title>Analog Clock</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="Digital Clock" />
+  <meta name="description" content="This is a Digital Clock" />
+  <link
+    rel="shortcut icon"
+    href="./clock-logo/favicon.ico"
+    type="image/x-icon"
+  />
 </head>
-
 <body>
-       
-       <div class="container">
-              <div class="clock">
-                     <div style="--clr: #ff0000; --h: 50px" id="hour" class="hand">
-                            <i></i>
-                     </div>
-                     <div style="--clr: #ff0000; --h: 74px" id="min" class="hand">
-                            <i></i>
-                     </div>
-                     <div style="--clr: #ffffff; --h: 90px" id="sec" class="hand">
-                            <i></i>
-                     </div>
+<style>              
+.row-2 {
+  display: flex;
+  justify-content: center;
+  
+}
+.row-2 .col {
+  width: 40%;
+  height: auto;
+}
+.digitalClock {
+  margin: 5px;
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-left: 20px;
+  padding-top: 12px;
+  z-index: 3;
+}
+.timer {
+  width: 98%;
+  height: 82px;
+  margin-top: 18px;
+  margin-left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.time {
+  font-family: "Bubblegum Sans", cursive;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #3d087bde;
+  margin-top: 20px;
+}
+#hours {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #3d087bde;
+  text-align: center;
+}
+#mins {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #3d087bde;
+  text-align: center;
+}
+#secs {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #3d087bde;
+  text-align: center;
+}
+.t {
+  width: 80px;
+  height: 82px;
+  border-radius: 5px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  color: #dd39e9;
+  text-align: center;
+}
+.t1 {
+  text-align: center;
+  align-content: center;
+  color: #ffffff;
+  margin-top: 10px;
+  background-color: #6b5ac1;
+  padding-top: 10px;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  font-family: "Bubblegum Sans", cursive;
+}
+.colon {
+  font-size: 2.4rem;
+  margin-top: 10px;
+}
+@media screen and (max-width: 675px) {
+  .row-2 {
+    display: block;
+  }
+  .row-1 .col,
+  .row-2 .col {
+    width: 100%;
+  }
+}
+.row-2 .col {
+  padding: 20px;
+  margin-top: auto;
+}
+.timeTable {
+  width: 100%;
+  height: 280px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #ffffff;
+  display: inline-block;
+  padding: 20px;
+  position: relative;
+  top: 5px;
+}
+</style>
+   <div class="row">
+       <div class="col-sm-6">
+              <br><br><br>
+              <div class="time"><center>TIME</center></div>
+       </div> 
+       <div class="col-sm-6">
+    <div class="digitalClock">
+      <div class="timer">
+        <div id="hours" class="t">00<br />hours</div>
+        <div class="colon">:</div>
+        <div id="mins" class="t">00<br />mins</div>
+        <div class="colon">:</div>
+        <div id="secs" class="t">00<br />secs</div>
+        <div id="session" class="t1">AM</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  <script>
+  let timeText = document.getElementById("timeText");
+let greetText = document.getElementById("greetText");
 
-                     <span style="--i: 1"><b>1</b></span>
-                     <span style="--i: 2"><b>2</b></span>
-                     <span style="--i: 3"><b>3</b></span>
-                     <span style="--i: 4"><b>4</b></span>
-                     <span style="--i: 5"><b>5</b></span>
-                     <span style="--i: 6"><b>6</b></span>
-                     <span style="--i: 7"><b>7</b></span>
-                     <span style="--i: 8"><b>8</b></span>
-                     <span style="--i: 9"><b>9</b></span>
-                     <span style="--i: 10"><b>10</b></span>
-                     <span style="--i: 11"><b>11</b></span>
-                     <span style="--i: 12"><b>12</b></span>
-              </div>
-       </div>
+function showTime() {
+  let showDisplayTime = new Date();
+  let hours = showDisplayTime.getHours();
+  let mins = showDisplayTime.getMinutes();
+  let secs = showDisplayTime.getSeconds();
+  let session = document.getElementById("session");
 
-       <script src="script_clk.js"></script>
+  if (hours >= 12) {
+    session.innerHTML = "PM";
+  } else {
+    session.innerHTML = "AM";
+  }
+
+  if (hours > 12) {
+    hours = hours - 12;
+  }
+  if ((hours + "").length === 1) {
+    hours = "0" + hours;
+  }
+  if ((mins + "").length === 1) {
+    mins = "0" + mins;
+  }
+  if ((secs + "").length === 1) {
+    secs = "0" + secs;
+  }
+
+  document.getElementById("hours").innerHTML = hours + `<br>hours`;
+  document.getElementById("mins").innerHTML = mins + `<br>mins`;
+  document.getElementById("secs").innerHTML = secs + `<br>secs`;
+  document.getElementById("changeImage").style.borderRadius = "10px";
+}
+setInterval(showTime, 1000);
+</script>
+
 </body>
-
 </html>

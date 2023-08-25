@@ -372,13 +372,19 @@ img {
 .skills__css {
   width: 85%;
 }
+.skills__boot {
+  width: 90%;
+}
 
 .skills__js {
   width: 65%;
 }
 
 .skills__ux {
-  width: 80%;
+  width: 79%;
+}
+.skills__py {
+  width: 82%;
 }
 
 .skills__img {
