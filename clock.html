@@ -129,6 +129,11 @@
   position: relative;
   top: 5px;
 }
+.work__img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: .5rem;
+  overflow: hidden;
+}
 </style>
    <div class="row">
        <div class="col-sm-6">
@@ -137,6 +142,7 @@
        </div> 
        <div class="col-sm-6">
     <div class="digitalClock">
+      <div class="work__img">
       <div class="timer">
         <div id="hours" class="t">00<br />hours</div>
         <div class="colon">:</div>
@@ -145,9 +151,10 @@
         <div id="secs" class="t">00<br />secs</div>
         <div id="session" class="t1">AM</div>
       </div>
+      </div>
     </div>
   </div>
-</div>
+    </div>
 </div>
   <script>
   let timeText = document.getElementById("timeText");
