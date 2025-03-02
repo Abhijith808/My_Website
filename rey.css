@@ -386,7 +386,10 @@ img {
 .skills__py {
   width: 82%;
 }
-.skills__tel, .skills__qgis {
+.skills__tele { 
+  width: 40%;
+}
+.skills__qgiss {
   width: 40%;
 }
 
