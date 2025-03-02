@@ -475,6 +475,11 @@ textarea.contact__input {
   transform: scale(1.05);
 }
 
+.modal-footer {
+  margin-top: auto; /* Pushes it down */
+  display: flex;
+  justify-content: center; /* Centers button */
+}
 
 /* projects */
 
