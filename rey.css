@@ -386,10 +386,8 @@ img {
 .skills__py {
   width: 82%;
 }
-.skills__tele { 
-  width: 40%;
-}
-.skills__qgiss {
+
+.skills__tel {
   width: 40%;
 }
 
@@ -417,74 +415,159 @@ img {
 }
 
 /* ===== CONTACT =====*/
+/* ===== CONTACT SECTION ===== */
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact__form {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
 .contact__input {
   width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
   outline: none;
-  margin-bottom: var(--mb-4);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contact__input:focus {
+  border-color: #6e45e2;
+}
+
+textarea.contact__input {
+  min-height: 120px;
+  resize: none;
 }
 
 .contact__button {
-  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
   border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
+  border-radius: 8px;
   cursor: pointer;
-  margin-left: auto;
+  transition: all 0.3s ease-in-out;
 }
+
+.contact__button:hover {
+  background: linear-gradient(135deg, #573dcf, #60b9b6);
+  transform: scale(1.05);
+}
+
+
 /* projects */
 
-#projects .card{
-  background-color: #26c6da;
- margin-top: 20px;
+/* ===== WORK / PROJECTS ===== */
+.work__container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
 
-}
-#projects .card img{
-  width: 50%;
-  height: 200px;
-}
-.project-button{
-  width: 150px;
-  height: 40px;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 2px;
+.work__card {
+  width: 320px;
+  height: 220px;
+  background: linear-gradient(135deg, #6e45e2, #88d3ce);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: none;
-  background-color: rgb(0, 0, 0);
-  color: rgb(252, 248, 248);
-  transform: scale(0.5s);
-  margin-top: 10px;
-}
-.project-button:hover{
-  background-color: rgb(251, 248, 248);
-  transition: 0.5s ease;
-  color: rgb(0, 0, 0);
+  padding: 20px;
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-#projects .card .card-text{
-  font-size: 1rem;
-  font-weight: 500;
-  font-style: italic;
-  letter-spacing: 2px;
-  color: rgb(0, 0, 0);
+.work__card:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4);
 }
-#projects .card .card-header{
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  font-family: monospace;
-  letter-spacing: 3px;
-  font-weight: bolder;
-  
+
+.card-content {
+  transform: translateZ(20px);
+  position: relative;
 }
-#projects .card:hover{
-  box-shadow: 0 0 30px rgb(0, 0, 0,0.6);
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
+
+.card-text {
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.card-buttons {
+  margin-top: 15px;
+}
+
+.project-button {
+  background: #fff;
+  color: #6e45e2;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.project-button:hover {
+  background: #5a36c5;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* ===== "More Projects Coming Soon" Section ===== */
+.coming-soon {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(110, 69, 226, 0.1);
+  border-radius: 10px;
+}
+
+.coming-soon h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6e45e2;
+}
+
+.coming-soon p {
+  font-size: 16px;
+  color: #333;
+}
+
 
 /* contact */
 
