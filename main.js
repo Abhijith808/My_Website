@@ -89,3 +89,24 @@ image.addEventListener('mouseover', () => {
 image.addEventListener('mouseout', () => {
   image.querySelector('img').style.filter = 'grayscale(100%)';
 });
+
+
+//Project//
+
+
+function rotateCard(event, card) {
+  const cardRect = card.getBoundingClientRect();
+  const x = event.clientX - cardRect.left;
+  const y = event.clientY - cardRect.top;
+  const centerX = cardRect.width / 2;
+  const centerY = cardRect.height / 2;
+  
+  const rotateX = ((y - centerY) / centerY) * 10;
+  const rotateY = ((centerX - x) / centerX) * 10;
+
+  card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+}
+
+function resetCard(card) {
+  card.style.transform = "rotateX(0) rotateY(0)";
+}
