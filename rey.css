@@ -386,6 +386,14 @@ img {
 .skills__py {
   width: 82%;
 }
+.skills__tel, .skills__qgis {
+  width: 40%;
+  height: 10px;
+  background-color: #4caf50; /* Change this to the color you prefer */
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
 
 .skills__img {
   border-radius: .5rem;
